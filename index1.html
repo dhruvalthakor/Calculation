@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+
+// 1.Simple Calculator using Operators:
+
+
+let add=(a, b)=>a + b;
+
+let subtract=(a, b)=> a - b;
+
+let multiply=(a, b)=> a * b;
+
+
+let divide=(a, b)=> b===0?"Cannot divide by zero":a / b
+let num1 = 10;
+let num2 = 5;
+
+console.log("Addition:", add(num1, num2));
+console.log("Subtraction:", subtract(num1, num2));
+console.log("Multiplication:", multiply(num1, num2));
+console.log("Division:", divide(num1, num2));
+
+
+//2. JavaScript Program to Swap Two Variables
+
+let a = 5;
+let b = 10;
+
+console.log("Before swapping:");
+console.log("a =", a);
+console.log("b =", b);
+
+let temp = a;
+a = b;
+b = temp;
+
+console.log("After swapping:");
+console.log("a =", a);
+console.log("b =", b);
+
+//3. JavaScript Program to Find the Square
+
+let square=num=>num * num;
+
+
+let number = 5;
+
+console.log(`Square of ${ number} is ${square(number)}`);
+console.log("Square of", number, "is", square(number));
+
+//4. Find the third angle of a right triangle if two other angles are given
+
+let findThirdAngle=(angle1, angle2)=> angle1 + angle2 >= 180?  "Invalid input, angles exceed 180 degrees.":180 - angle1 - angle2;
+    
+let angle1 = 30;
+let angle2 = 60;
+
+console.log("Third angle is:", findThirdAngle(angle1, angle2));
+
+</script>
+</html>
